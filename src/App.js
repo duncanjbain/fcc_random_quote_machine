@@ -64,7 +64,7 @@ class App extends React.Component {
 
           <div className="row pb-5">
             <div className="col-lg-6 mx-auto align-middle text-center">
-              <a href="https://twitter.com" className="text-info" id="tweet-quote"><i class="fab fa-twitter fa-lg"></i> Tweet this quote!</a>
+              <a href={`https://twitter.com/intent/tweet?text=` + this.state.quote.content} className="text-info" id="tweet-quote"><i class="fab fa-twitter fa-lg"></i> Tweet this quote!</a>
             </div>
           </div>
           <div className="row pb-3">
