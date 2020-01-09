@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Free Code Camp - Random Quote Machine
 
-## Available Scripts
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8c635a1a-152d-4194-af5e-4378a9556559/deploy-status)](https://app.netlify.com/sites/fcc-randomquotemachine/deploys) ![GitHub](https://img.shields.io/github/license/duncanjbain/fcc_random_quote_machine)
 
-In the project directory, you can run:
+This repo contains my submission for the Random Quote Machine project which is part of the Free Code Camp Front End Libraries certification.
 
-### `yarn start`
+## Demo
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+View a live demo of the app [here](http://fcc-randomquotemachine.netlifly.com)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Install
 
-### `yarn test`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### Installing
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A step by step on running a local deployment environment.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Clone the repo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/duncanjbain/fcc_random_quote_machine.git
+```
 
-### `yarn eject`
+Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run a local live deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+yarn start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Built With
 
-## Learn More
+* [React](https://reactjs.org/) - The web framework used
+* [Bootstrap](https://getbootstrap.com/) - CSS framework used
+* [Fontawesome](https://fontawesome.com/) - Icons used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Duncan Bain](https://github.com/duncanjbain)
 
-### Code Splitting
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-### Analyzing the Bundle Size
+## Acknowledgments
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Luke Peavey for random quote API [https://github.com/lukePeavey/quotable](https://github.com/lukePeavey/quotable)
+* Free Code Camp
