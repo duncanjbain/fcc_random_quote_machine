@@ -2,7 +2,36 @@ import React from 'react';
 import './App.css';
 import ReactFCCtest from 'react-fcctest';
 
+const API_URL = 'https://api.quotable.io/';
+const DEFAULT_QUERY = 'random';
+
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+
+    this.state = {
+      quote: []
+    }
+
+    this.FetchRandomQuote = this.FetchRandomQuote.bind(this);
+
+  }
+
+  FetchRandomQuote = () => {
+    fetch(API_URL + DEFAULT_QUERY)
+      .then(response => response.json())
+      .then((data) => {
+        this.setState({ quote: data })
+        console.log(data)
+      })
+      .catch(console.log)
+  }
+
+  componentDidMount() {
+    this.FetchRandomQuote();
+  }
+
   render() {
     return (
       <section className="py-5 row-100" id='quote-box'>
@@ -23,8 +52,8 @@ class App extends React.Component {
             <div className="col-lg-6 mx-auto">
               <blockquote className="blockquote bg-white p-5 shadow rounded">
                 <div><i className="fa fa-quote-left"></i></div>
-                <p className="mb-0 mt-2 font-italic" id='text'>{'"Quote Text Goes Here'}</p>
-                <footer className="blockquote-footer pt-4 mt-4 border-top pb-3" id='author'>{'Author Goes Here'}
+                <p className="mb-0 mt-2 font-italic" id='text'>{this.state.quote.content}</p>
+                <footer className="blockquote-footer pt-4 mt-4 border-top pb-3" id='author'>{this.state.quote.author}
                 </footer>
 
               </blockquote>
@@ -40,7 +69,7 @@ class App extends React.Component {
           </div>
           <div className="row pb-3">
             <div className="col-lg-6 mx-auto align-middle text-center">
-              <button className="btn btn-primary" id="new-quote">New Quote!</button>
+              <button className="btn btn-primary" id="new-quote" onClick={this.FetchRandomQuote}>New Quote!</button>
             </div>
           </div>
 
@@ -48,7 +77,9 @@ class App extends React.Component {
         </div>
       </section>
     )
-  }
+  };
 }
+
+
 
 export default App;
