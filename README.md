@@ -6,7 +6,7 @@ This repo contains my submission for the Random Quote Machine project which is p
 
 ## Demo
 
-View a live demo of the app [here](http://fcc-randomquotemachine.netlifly.com)
+View a live demo of the app [here](http://fcc-randomquotemachine.netlify.com)
 
 ## Install
 
