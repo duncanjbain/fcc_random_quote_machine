@@ -8,6 +8,8 @@ This repo contains my submission for the Random Quote Machine project which is p
 
 View a live demo of the app [here](http://fcc-randomquotemachine.netlify.com)
 
+![image](app_preview.PNG)
+
 ## Install
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
